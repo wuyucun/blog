@@ -59,7 +59,7 @@ export const profileConfig: ProfileConfig = {
 	links: [
 		{
 			name: "微信",
-			icon: "fa6-brands:wexin", // Visit https://icones.js.org/ for icon codes
+			icon: "fa6-brands:weixin", // Visit https://icones.js.org/ for icon codes
 			// You will need to install the corresponding icon set if it's not already included
 			// `pnpm add @iconify-json/<icon-set-name>`
 			url: "https://mp.weixin.qq.com/s/v5qUK8ZQJ1BUniGTW144zg",
