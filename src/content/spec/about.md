@@ -1,9 +1,16 @@
-# About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+# 关于
+望云川。欢迎访问[wyc.cc](https://wyc.cc)
 
-::github{repo="saicaca/fuwari"}
+写在2025年：网站和域名终究只是一个形式。比形式更重要的一个稳定输出内容内核。这个内核需要我们不断的从外部汲取信息、施加脑力融会贯通、最后再勤奋地往外输出。在小红书图文/抖音视频/Ai创作横扫全网的2025年，做文字是一门孤芳自赏的“艺术”。在不考虑受众、不考虑盈利的情况下，希望这个网站可以成为一个记录、复盘、升华的自留地，且最核心的主旨是取悦自己。
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+微信公众号：
+
+![image-QcWP.png](../../assets/images/image-QcWP.png)
+
+### 加入的博客组织
+
+[个站商店](https://storeweb.cn/about)：一个精致的，带社交元素的个人网站发布平台，博客收录网站。
+
+[开往：](https://www.travellings.cn/go.html)让传统友链“活跃”，让网页相互接力，让流量相互流动，让网络开放起来
+
+[博客圈](https://www.boyouquan.com/home)：博友圈是博客人的专属朋友圈，连接还在写博的博友，让那属于文字的时代延续光辉！
