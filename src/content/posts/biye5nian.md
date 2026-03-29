@@ -2,7 +2,7 @@
 title: 又是一年毕业季，写写毕业后被偷走的五年
 published: 2025-06-19
 description: ''
-tags: [感悟，人生]
+tags: [感悟, 人生]
 category: 生活随笔
 draft: false
 ---
