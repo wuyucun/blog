@@ -1,6 +1,6 @@
 ---
 title: AI、机器人与经济危机
-published: 2026-2-1
+published: 2026-02-01
 description: ''
 tags: [AI, 马斯克, 科技, 经济]
 category: 日新月异
