@@ -8,10 +8,6 @@ module.exports = {
       fontFamily: {
         sans: ["Roboto", "sans-serif", ...defaultTheme.fontFamily.sans],
       },
-      fontSize: {
-        // 将基础字号从 1rem (16px) 调大到 1.125rem (18px) gemini添加
-        base: ['1.125rem', { lineHeight: '1.75rem' }], 
-      },
     },
   },
   plugins: [require("@tailwindcss/typography")],
