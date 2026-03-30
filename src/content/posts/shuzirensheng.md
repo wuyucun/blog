@@ -5,12 +5,10 @@ description: ''
 tags: [苹果, 科技]
 category: 生活随笔
 draft: false
-image: "./../../assets/images/8vw42gq9pwp.jpg"
+image: "./../../assets/images/Gemini_Generated_Image_vt4q5nvt4q5nvt4q.png"
 ---
 
 
-
-![img](./../../assets/images/Gemini_Generated_Image_vt4q5nvt4q5nvt4q.png)
 
 > 互联网时代，数据的稳定存储是十分昂贵的。丢失手机，就会丢失照片和聊天记录。曾经风光一时的天涯论坛关站，无数神贴一夜归零。这警示我们：做好数字人生计划，留存有价值的信息，享受更便捷的数字生活。
 

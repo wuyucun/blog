@@ -3,7 +3,7 @@ title: 摩尔线程IPO，什么来头？
 published: 2025-09-29
 description: ''
 tags: [企业, AI]
-category: 置身事内
+category: 日新月异
 draft: false
 image: "./../../assets/images/8vw42gq9pwp.jpg"
 ---
