@@ -1,5 +1,5 @@
 ---
-title: 招商银行阻碍了共同富裕
+title: “加班”银行阻碍了共同富裕
 published: 2026-03-31
 description: ''
 tags: [银行, 经济]
