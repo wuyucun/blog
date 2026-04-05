@@ -47,6 +47,9 @@ const jsonLd = {
 		? entry.data.lang.replace("_", "-")
 		: siteConfig.lang.replace("_", "-"),
 	// TODO include cover image here
+
+    <link rel="stylesheet"href="https://unpkg.com/@waline/client@v3/dist/waline.css"/>
+
 };
 ---
 <MainGridLayout banner={entry.data.image} title={entry.data.title} description={entry.data.description} lang={entry.data.lang} setOGTypeArticle={true} headings={headings}>
@@ -141,5 +144,14 @@ const jsonLd = {
     </div>
 
      <Twikoo />
+<div id="com"></div>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
 
+  init({
+  el: '#com',
+  serverURL:'https://waline.wyc.cc',
+  reaction:true,
+});
+</script>
 </MainGridLayout>
