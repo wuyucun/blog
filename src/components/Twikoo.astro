@@ -1,22 +1,44 @@
 ---
 // src/components/Twikoo.astro
-// 你可以在这里定义 props 接收配置，为了简单，这里直接写死配置
 const envId = "https://comment.wyc.cc"; 
 ---
 
-<div id="tcomment" class="mt-8 rounded-2xl bg-[var(--card-bg)] p-6 shadow-[var(--card-shadow)]"></div>
+<div id="tcomment" class="mt-8 mb-4 w-full rounded-2xl bg-[var(--card-bg)] p-6 shadow-[var(--card-shadow)]" data-env-id={envId}></div>
 
-<script is:inline src="https://registry.npmmirror.com/twikoo/1.7.7/files/dist/twikoo.min.js"></script>
+<script>
+  function loadTwikoo() {
+    const container = document.getElementById('tcomment');
+    // 如果当前页面没有评论框，或者评论框里面已经有内容了，就跳过
+    if (!container || container.innerHTML !== '') return;
+    
+    // 获取传递过来的环境 ID
+    const envId = container.getAttribute('data-env-id');
 
-<script is:inline define:vars={{ envId }}>
-  document.addEventListener('astro:page-load', () => {
-    // 确保只有在 tcomment 元素存在时才初始化，避免在非文章页报错
-    if (document.getElementById('tcomment')) {
-      twikoo.init({
-        envId: envId,
-        el: '#tcomment',
-        // region: 'ap-guangzhou', // 如果你使用的是腾讯云环境，请取消注释并填入对应地域
-      })
+    // 如果全局已经加载过 twikoo，直接初始化
+    if ((window as any).twikoo) {
+      (window as any).twikoo.init({ envId: envId, el: '#tcomment' });
+    } else {
+      // 首次加载页面时，动态创建 script 标签引入 Twikoo
+      const script = document.createElement('script');
+      script.src = 'https://registry.npmmirror.com/twikoo/1.7.7/files/dist/twikoo.min.js';
+      script.onload = () => {
+        (window as any).twikoo.init({ envId: envId, el: '#tcomment' });
+      };
+      document.head.appendChild(script);
     }
-  });
+  }
+
+  // 1. 初次访问直接打开页面时加载
+  loadTwikoo();
+
+  // 2. 万能路由监听方案：兼容 Fuwari 的 Swup 页面无刷新跳转
+  // 监听 URL 的变化，只要 URL 变了就尝试重新加载评论框
+  let lastUrl = location.href;
+  new MutationObserver(() => {
+    if (location.href !== lastUrl) {
+      lastUrl = location.href;
+      // 延迟 200ms 等待 Fuwari 的 Swup 动画把新的 DOM 替换好
+      setTimeout(loadTwikoo, 200);
+    }
+  }).observe(document.body, { childList: true, subtree: true });
 </script>
