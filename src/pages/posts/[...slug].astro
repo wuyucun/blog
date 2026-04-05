@@ -48,7 +48,6 @@ const jsonLd = {
 		: siteConfig.lang.replace("_", "-"),
 	// TODO include cover image here
 
-    <link rel="stylesheet"href="https://unpkg.com/@waline/client@v3/dist/waline.css"/>
 
 };
 ---
@@ -144,9 +143,8 @@ const jsonLd = {
     </div>
 
      <Twikoo />
-<div id="com"></div>
-<script type="module">
-  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+
+<Waline />
 
   init({
   el: '#com',
