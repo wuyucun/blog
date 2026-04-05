@@ -1,0 +1,22 @@
+---
+// src/components/Twikoo.astro
+// 你可以在这里定义 props 接收配置，为了简单，这里直接写死配置
+const envId = "commentali.wyc.cc"; 
+---
+
+<div id="tcomment" class="mt-8 rounded-2xl bg-[var(--card-bg)] p-6 shadow-[var(--card-shadow)]"></div>
+
+<script is:inline src="https://cdn.staticfile.net/twikoo/1.6.36/twikoo.all.min.js"></script>
+
+<script is:inline define:vars={{ envId }}>
+  document.addEventListener('astro:page-load', () => {
+    // 确保只有在 tcomment 元素存在时才初始化，避免在非文章页报错
+    if (document.getElementById('tcomment')) {
+      twikoo.init({
+        envId: envId,
+        el: '#tcomment',
+        // region: 'ap-guangzhou', // 如果你使用的是腾讯云环境，请取消注释并填入对应地域
+      })
+    }
+  });
+</script>
