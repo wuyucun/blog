@@ -13,10 +13,9 @@ import ImageWrapper from "../../components/misc/ImageWrapper.astro";
 import PostMetadata from "../../components/PostMeta.astro";
 import { profileConfig, siteConfig } from "../../config";
 import { formatDateToYYYYMMDD } from "../../utils/date-utils";
-// 👇 在这里引入 Twikoo 组件
-import Twikoo from "@components/Twikoo.astro"; 
+
 import Waline from '@components/Waline.astro';
-// ... 下面是原有的 getStaticPaths 等代码 ...
+
 
 export async function getStaticPaths() {
 	const blogEntries = await getSortedPosts();
@@ -142,7 +141,6 @@ const jsonLd = {
         </a>
     </div>
 
-     <Twikoo />
 
 <Waline />
 
