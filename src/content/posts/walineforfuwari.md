@@ -25,20 +25,22 @@ draft: false
 ```
  environment:
   - SQLITE_PATH=SQLITE路径
-  - TZ=时区
+  - TZ=Asia/Shanghai
   - JWT_TOKEN=登陆密钥
-  - COMMENT_AUDIT=是否开始审核
+  - COMMENT_AUDIT=false是否开始审核
   - AUTHOR_EMAIL=作者邮箱
   - SITE_NAME=网站名称
   - SITE_URL=网站地址
-  - SECURE_DOMAINS=安全地址
+  - SECURE_DOMAINS=安全地址，配置时安全域名需要同时添加网站地址和 Waline 服务端地址（不包含传输协议，即 http:// 或 https://）。
   - SMTP_SERVICE=SMTP服务商
   - SMTP_USER=SMTP发件人
   - SMTP_PASS=SMTP密码
   - SMTP_SECURE=true
   - DISABLE_REGION=true 隐藏评论者的IP归属地）
   - DISABLE_USERAGENT=true 隐藏评论者的 UA
-  - AVATAR_PROXY=
+  - AVATAR_PROXY=https://cravatar.cn/avatar/{{mail|md5}}
+  - AKISMET_KEY=false 关闭垃圾检测，海外服务拖慢速度
+  - GRAVATAR_STR=https://cravatar.cn/avatar/
             
 ```
 
@@ -141,6 +143,15 @@ import '@waline/client/style';
 注意将上面的https://你的-waline-服务端地址"改为你自己的后端地址。更多教程详见官方文档[在项目中导入](https://waline.js.org/cookbook/import/project.html)
 
 
+
+可选配置项（精简化）
+
+```
+imageUploader: false, // 关闭图片上传功能（隐藏传图按钮）
+search: false,        // 关闭 GIF 搜索功能（隐藏 GIF 按钮）
+noRss: true,   //关闭RSS按钮  
+        
+```
 
 ### 3.将组件引入文章页面
 
