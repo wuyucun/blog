@@ -140,9 +140,7 @@ import '@waline/client/style';
 
 
 
-注意将上面的https://你的-waline-服务端地址"改为你自己的后端地址。更多教程详见官方文档[在项目中导入](https://waline.js.org/cookbook/import/project.html)
-
-
+注意将上面的`https://你的-waline-服务端地址`改为你自己的后端地址。
 
 可选配置项（精简化）
 
@@ -152,6 +150,8 @@ search: false,        // 关闭 GIF 搜索功能（隐藏 GIF 按钮）
 noRss: true,   //关闭RSS按钮  
         
 ```
+
+更多教程详见官方文档[《在项目中导入》](https://waline.js.org/cookbook/import/project.html)。
 
 ### 3.将组件引入文章页面
 
