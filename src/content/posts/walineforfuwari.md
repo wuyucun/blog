@@ -3,7 +3,7 @@ title: Fuwari增加Waline评论系统
 published: 2026-04-06
 description: ''
 tags: [建站笔记]
-category: 生活随笔
+category: 日新月异
 draft: false
 
 ---
