@@ -46,7 +46,7 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.About,
 		{
 			name: "知识库",
-			url: "https://yunriver.com", // Internal links should not include the base path, as it is automatically added
+			url: "https://doc.wyc.cc", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
 	],
