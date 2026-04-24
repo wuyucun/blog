@@ -4,11 +4,10 @@ published: 2026-04-25
 description: '传闻中的DeepSeek V4模型终于来了，性能比肩顶级闭源模型。关键是，开源！开源！造福一方！API费用低，被媒体亲切的欢呼“迈入百万上下文普惠时代”。'
 tags: [AI, 民企, 科技]
 category: 日新月异
-image: 'https://static.wyc.cc/20260424233837491260424.webp'
 draft: false
 ---
 
-
+![](https://static.wyc.cc/20260424233837491260424.webp)
 
 传闻中的DeepSeek V4模型终于来了。
 
@@ -58,3 +57,4 @@ draft: false
 
 
 
+![kanenori-mountain-6320288_1920](https://static.wyc.cc/kanenori-mountain-6320288_1920260424.webp)
