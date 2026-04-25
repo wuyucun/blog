@@ -1,7 +1,8 @@
 ---
 title: 牛排是怎么煎成的
 published: 2026-04-25
-description: ''
+description: '又到周末了，必须自己做点肉吃，补充蛋白质和维生素。'
+image: 'https://static.wyc.cc/17770932500475260425.webp'
 tags: [美食]
 category: 生活随笔
 draft: false
@@ -11,11 +12,7 @@ draft: false
 
 牛排选择：山姆澳洲谷饲烟肉牛排，180元/650克。
 
-
-
-![17770932500475.webp](https://static.wyc.cc/17770932500475260425.webp)
-
-牛排收到后就是未经冷冻的状态，可以直接使用。第一步先腌制，两面撒上盐和胡椒粉，放置19分钟。
+牛排收到后就是未经冷冻的状态，可以直接使用。第一步先腌制，两面撒上盐和胡椒粉，放置10分钟。
 
 <img src="https://static.wyc.cc/17770932497417260425.webp" alt="17770932497417.webp" style="zoom:50%;" />
 
